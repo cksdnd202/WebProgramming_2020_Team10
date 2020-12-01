@@ -1,0 +1,60 @@
+#about {
+    position:relative;
+    width:1500px;
+    max-width:100%;
+    height:800px;
+    margin:30px auto;
+    background-color: black; 
+    overflow:hidden;
+    color:white;
+}
+
+h1{   
+    color: white;
+    text-align: right;
+    font-size:42px;
+    line-height:1.05;
+    letter-spacing:-1px;
+}
+        
+p{
+    position: relative;
+    padding: 0 0px;
+    top: 50px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+hr{
+    border:solid #ddd;
+    border-width:1px 0 0;
+    clear:both;
+    margin:10px 0 30px;
+    height:0;
+}
+            
+.boseman{
+    position: absolute;
+    top: 150px;
+    padding: 15px;
+    left:1px;
+}
+
+.blurb p{
+      position: relative;
+      left: 0px;
+      padding-top: 30px;
+      padding-right: 25px;
+      line-height: 0.3;
+      color: white;
+}
+            
+.blurb h1{
+    position: relative;
+    left: 0px;
+    padding-top: 25px;
+    padding-right: 25px;
+    line-height: 1;
+    color: white;
+}

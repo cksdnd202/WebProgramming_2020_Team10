@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/* html {
+    scroll-behavior: smooth;
+} */
+.main{
+    z-index: 50;
+    box-sizing: border-box;
+    height: 100%;
+}
+.main-box{
+    position: relative;
+    padding: 0 20px;
+}
+.main-section{
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 50px 0;
+    /* border: 1px solid #000; */
+}
+
+/* page-title */
+.page-title{
+    width: 80%;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+.page-title h2{
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+.page-title h2::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 5px;
+    margin: 10px 0 0 0;
+    background-color: #aaa;
+}
+
+/* movie-list nodejs */
+.movie_list{
+    cursor: pointer;
+    margin-top: 20px;
+    color: #222;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #222;
+}
+
+/* poster */
+.poster-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+i{
+    font-style: italic;
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+/* script-wrap */
+.script-section{
+    box-sizing: border-box;
+    padding: 50px 20px 20px 40px;
+}
+.script-section h2{
+    letter-spacing: 0.02em;
+    font-size: 5em;
+    font-weight: bold;
+    height: 50px;
+}
+sub{
+    font-size: 0.5em;
+}
+.script-section h4{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.script-section h4::after{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 40px 0;
+    background: #aaa;
+}
+.script-section p{
+    font-size: 2.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0;
+}
+.sc-sq-se p{
+    font-size: 1.67em;
+}
+
+/* co-news */
+.co-news{
+    width: 80%;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 20px 0 0 0;
+}
+.sp-box{
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0;
+}
+.sp-box::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    margin-top: 20px;
+    background-color: #aaa;
+}
+.sp-box h3{
+    font-weight: bold;
+    font-size: 4em;
+    padding: 0 0 10px 0;
+}
+.sp-box i{
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1.5em;
+}
+.sp-box p{
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
+
+/* movie-wrap */
+.page{
+    z-index: -10;
+    width: 150px;
+    text-align: right;
+    position: fixed;
+    top: 5%;
+    right: 20px;
+}
+.movie-wrap h4{
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.page::after{
+    content: '';
+    position: relative;
+    display: block;
+    width: 140px;
+    height: 2px;
+    margin-top: 10px;
+    left: 10px;
+    background-color: #000;
+}
+.ab-mv-nav{
+    position: fixed;
+    top: 25%;
+    right: 20px;
+    text-align: right;
+}
+.ab-mv-nav .mv-list li{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.news::before, .news::after, .mv-list::before{
+    content: '';
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 1px;
+    margin: 10px 0;
+    left: 83px;
+    background-color: #aaa;
+}
+.mv-list a{
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.5s;
+}
+.mv-list a:hover{
+    color: #333
+}
+.mv-list a.active{
+    color: #333;
+}
+
+/* selected-mv */
+.selected-mv{
+    color: #333;
+}

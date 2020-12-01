@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="20160388_이승훈">
+    <title>Chadwick Bosman forever</title>
+    <link rel="stylesheet" href="./css/index_css/reset.css">
+    <link rel="stylesheet" href="./css/index_css/font-setting.css">
+    <link rel="stylesheet" href="./css/index_css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    
+    <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+    
+      expireDate = new Date
+      expireDate.setMonth(expireDate.getMonth()+6)
+      hitCt = eval(cookieVal("pageHit"))
+      hitCt++
+      document.cookie = "pageHit="+hitCt+";expires=" + expireDate.toGMTString()
+      
+      function cookieVal(cookieName) {
+      thisCookie = document.cookie.split("; ")
+      for (i=0; i<thisCookie.length; i++) {
+      if (cookieName == thisCookie[i].split("=")[0]) {
+      return thisCookie[i].split("=")[1]
+      }
+      }
+      return 0
+      }
+      
+      
+      </SCRIPT>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-box">
+          <div class="header-section header-logo-wrap">
+              <div class="logo-wrap">
+                  <a href="#"><img src="./img/index_img/logo.png" alt="로고" width="300px"></a>
+              </div>
+          </div>
+          <div class="header-section header-nav">
+              <div class="nav-wrap">
+                  <nav class="nav" id="nav">
+                      <ul class="nav-ul">
+                          <li class="nav-list"><a href="./main.html">추모하기</a></li>
+                          <li class="nav-list"><a href="./life.html">생애</a></li>
+                          <li class="nav-list"><a href="./work.html">작품 & 이야기</a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+
+    
+    
+      <!-- Main Image -->
+      <div class="row">
+        <div class="main-image col-12 center-text">
+          <img src="./img/index_img/chadwickboseman.jpg" width="1900" alt="main image">
+               
+        </div>
+      </div>
+
+      <H3 align=center>
+
+        <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+        document.write("<font color=red>" + hitCt + "</font> 번째 방문자입니다.")
+  
+        </SCRIPT>
+  
+        </H3>
+
+
+
+     </div>
+    <p>
+      <div id="disqus_thread"></div>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web2-qo6eabwifl.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
+
+        </p>
+
+
+  </body>
+</html>
